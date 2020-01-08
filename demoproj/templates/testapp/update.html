@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    ID :<input type="number" name="eid" value="{{emp.id}}"><br><br>
+    Name :<input type="text" name="ename" value="{{emp.name}}"><br><br>
+    Address :<input type="text" name="eaddr" value="{{emp.addr}}"><br><br>
+    Salary :<input type="number" name="esal" value="{{emp.sal}}"><br><br>
+    Input :<input type="submit">
+</form>
+</body>
+</html>
